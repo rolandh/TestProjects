@@ -1,0 +1,16 @@
+﻿<Window x:Class="VolumeDetector.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VolumeDetector" Height="350" Width="525" ShowInTaskbar="False">
+    <Grid>
+        <ProgressBar x:Name="VolumeLevel" HorizontalAlignment="Left" Height="41" Margin="10,36,0,0" VerticalAlignment="Top" Width="301"/>
+        <Label Content="Current Volume Level in %" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Warning Threshold:" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Threshold" HorizontalAlignment="Left" Height="23" Margin="10,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="10"/>
+        <Button Content="Set" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <ProgressBar x:Name="VolumeLevel10SecondAverage" HorizontalAlignment="Left" Height="41" Margin="10,215,0,0" VerticalAlignment="Top" Width="301"/>
+        <Label Content="Rolling Average (period defined in settings.ini)" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="You need to set this in settings.ini for it to be permanent" HorizontalAlignment="Left" Margin="90,146,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
