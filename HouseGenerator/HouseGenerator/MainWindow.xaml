@@ -1,0 +1,21 @@
+﻿<Window x:Class="HouseGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HouseGenerator"
+        mc:Ignorable="d"
+        Title="Raster2Vector" Height="691.53" Width="861.832">
+    <Grid Margin="0,0,-8,-5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="386*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="LoadBitmapButton" Content="Load Image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="LoadBitmapButton_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="236.466,11,0,0" TextWrapping="Wrap" Text="Raster" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="655,10,0,0" TextWrapping="Wrap" Text="Vector" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Canvas x:Name="Raster" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="402" Margin="10,51,0,0"/>
+        <Canvas x:Name="Vector" HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="402" Margin="375,51,0,0" Grid.Column="1"/>
+
+    </Grid>
+</Window>
